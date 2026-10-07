@@ -1,0 +1,7 @@
+{
+  "name": "H Pilates & Wellness",
+  "description": "Nghệ Thuật Của Sự Chuyển Động — Không gian Pilates & Chăm sóc sức khỏe cao cấp kết hợp nét thanh lịch kiến trúc, phong cách thẩm mỹ trang nhã và rèn luyện tâm - thân.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

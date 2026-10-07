@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Be Vietnam Pro', sans-serif;
+  --font-serif: 'Noto Serif Display', serif;
+  --font-display: 'Noto Serif Display', serif;
+  --font-editorial: 'Be Vietnam Pro', sans-serif;
+  
+  /* Tailwind CSS Variables (Migrated from :root for UI UX Pro Max Optimization) */
+  --color-ivory: #FAF6EE;
+  --color-sand: #EDE0C8;
+  --color-coffee: #3D2417;
+  --color-espresso: #5A3826;
+  --color-gold: #B08D57;
+  --color-tan: #C9A876;
+  --color-light: #E2D2BC;
+}
+
+@layer base {
+  :root {
+    --bg-ivory: var(--color-ivory);
+    --bg-sand: var(--color-sand);
+    --text-coffee: var(--color-coffee);
+    --text-espresso: var(--color-espresso);
+    --accent-gold: var(--color-gold);
+    --border-tan: var(--color-tan);
+    --border-light: var(--color-light);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: var(--bg-ivory);
+    color: var(--text-espresso);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-optical-sizing: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-serif, .font-subserif {
+    font-family: 'Noto Serif Display', serif;
+    font-optical-sizing: auto;
+  }
+
+  .font-display {
+    font-family: 'Noto Serif Display', serif;
+    font-optical-sizing: auto;
+  }
+
+  .font-editorial {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    letter-spacing: 0.18em;
+  }
+
+  .font-subserif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    font-optical-sizing: auto;
+  }
+}
+
+/* Luxury Architectural Arch Curves */
+.arch-top {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.arch-full {
+  border-radius: 9999px;
+}
+
+.arch-asymmetric-left {
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 80px;
+}
+
+.arch-asymmetric-right {
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 80px;
+}
+
+/* Subtle Architectural Plaster Grain Overlay */
+.plaster-grain {
+  background-image: radial-gradient(rgba(61, 36, 23, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Luxury Gold Border Beam Animation */
+@keyframes goldBeam {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gold-border-glow {
+  background: linear-gradient(90deg, #B08D57 0%, #EDE0C8 50%, #B08D57 100%);
+  background-size: 200% 200%;
+  animation: goldBeam 6s ease infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gold-border-glow {
+    animation: none;
+    background-size: 100% 100%;
+  }
+}
+
+/* Text stroke for luxury editorial overlay */
+.text-stroke-gold {
+  -webkit-text-stroke: 1px #B08D57;
+  color: transparent;
+}
+
+.text-stroke-coffee {
+  -webkit-text-stroke: 1px #3D2417;
+  color: transparent;
+}
+
+/* Smooth custom scrollbar in ivory & gold */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A876;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B08D57;
+}
+
